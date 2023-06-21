@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-grid {
+	@apply grid gap-8  mb-8 md:grid-cols-2 lg:grid-cols-3 mx-auto;
+}
+.container {
+	@apply p-10 mx-auto;
+}
+.text-li {
+	@apply font-semibold text-lg text-gray-950 hover:text-gray-950 active:text-primary;
+}
+.active {
+	@apply font-semibold text-xl text-secondary ;
+}
+.text-li-dark {
+	@apply font-semibold text-lg  text-base-200 hover:text-gray-400 active:text-orange-200;
+}
+.add-class {
+	@apply input-bordered w-full rounded-sm shadow-md text-gray-500 font-medium;
+}
+.text-add-class {
+	@apply text-lg font-semibold text-secondary;
+}
+.text-tag {
+	@apply text-xl font-semibold text-neutral dark:text-gray-200;
+}
+.text-tag-dark {
+	@apply text-xl font-semibold;
+}
+.btn-primary {
+	@apply rounded-sm bg-accent border-none text-base-100 hover:bg-gray-900;
+}
+.banner-title {
+	@apply font-bold lg:text-6xl text-4xl text-center pb-2;
+}
+.banner-subtitle {
+	@apply font-semibold text-2xl text-center;
+}
