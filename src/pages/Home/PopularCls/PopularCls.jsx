@@ -15,11 +15,11 @@ axiosSecure.get('/classes').then(data=>setClasses(data.data))
 		
 	}, [loading]);
 	return (
-		<div className='container'>
+		<div className='container mx-auto'>
 
 			<Title className="mx-auto" heading="Popular Classes"></Title>
 			<div
-				className={`grid grid-cols-1 lg:grid-cols-3 lg:gap-8`}
+				className={`grid grid-cols-1 lg:grid-cols-3`}
 			>
 				{classes.slice(0, 6).map((classItem) => (
 					<PopularClsCard

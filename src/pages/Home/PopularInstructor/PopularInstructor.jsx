@@ -19,7 +19,7 @@ const PopularInstructors = () => {
 			return result.data;
 		},
 	});
-console.log(instructors);
+// console.log(instructors);
 	return (
 		<div className="container">
 			<Title heading={'Popular Instructor'}></Title>

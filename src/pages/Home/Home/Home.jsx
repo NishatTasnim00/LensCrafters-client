@@ -4,6 +4,8 @@ import { DarkModeContext } from '../../../Provider/DarkMoodProvider';
 import PopularInstructor from '../PopularInstructor/PopularInstructor';
 import Banner from '../Banner/Banner';
 import OurWork from '../../OurWork/OurWork';
+import Contact from '../Contact/Contact';
+import FAQSection from '../FAQSection/FAQSection';
 
 const Home = () => {
 	const { darkMode } = useContext(DarkModeContext);
@@ -14,6 +16,8 @@ const Home = () => {
 			<PopularCls></PopularCls>
 			<PopularInstructor></PopularInstructor>
 			<OurWork></OurWork>
+			<FAQSection />
+			<Contact />
 		</div>
 	);
 };

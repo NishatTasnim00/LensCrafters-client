@@ -7,11 +7,11 @@ const PopularInstructorCard = ({ instructor, hello }) => {
 
 	return (
 		<div
-			className={`card w-full  shadow-lg rounded-sm mt-10  ${
-				darkMode ? 'bg-gray-800 text-white' : ' '
+			className={`card w-10/12 mx-auto  shadow-lg rounded-lg mt-10  ${
+				darkMode ? 'bg-accent' : 'bg-zinc-300' 
 			}`}
 		>
-			<figure className="h-32 w-32 mx-auto rounded-full mt-8 shadow-lg">
+			<figure className="h-32 w-32 mx-auto rounded-full mt-12 shadow-lg">
 				<img
 					className="h-32 w-32 rounded-full hover:scale-125"
 					src={photo}

@@ -30,7 +30,7 @@
 	@apply text-xl font-semibold;
 }
 .btn-primary {
-	@apply rounded-sm bg-accent border-none text-base-100 hover:bg-gray-900;
+	@apply rounded-lg bg-accent border-none text-base-100 hover:bg-gray-900;
 }
 .banner-title {
 	@apply font-bold lg:text-6xl text-4xl text-center pb-2;

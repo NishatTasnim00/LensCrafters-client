@@ -8,7 +8,7 @@ const PopularClsCard = ({ classItem }) => {
 
 	return (
 		<div
-			className={`card w-full  h-[350px] lg:w-10/12  rounded-sm mt-10 text-center ${
+			className={`card w-full  h-[350px] lg:w-10/12  rounded-lg mt-10 text-center mx-auto  ${
 				darkMode ? 'bg-gray-800' : ' '
 			}`}
 		>
@@ -16,7 +16,7 @@ const PopularClsCard = ({ classItem }) => {
 				<img
 					src={image}
 					alt="photo"
-					className="rounded-sm w-full h-full object-cover"
+					className="rounded-lg w-full h-full object-cover"
 				/>
 			</figure>
 
