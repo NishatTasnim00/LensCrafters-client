@@ -27,7 +27,7 @@ const Dashboard = () => {
 			<div className="drawer-side">
 				<label htmlFor="my-drawer-2" className="drawer-overlay"></label>
 
-				<ul className="menu p-4 w-80 h-full bg-gray-400 text-base-gray-800 pt-12 ">
+				<ul className="menu p-4 w-80 h-full bg-accent text-base-gray-800 pt-12 ">
 					<div className="flex gap-1 mb-5 justify-center pb-15">
 						<motion.div
 							animate={{

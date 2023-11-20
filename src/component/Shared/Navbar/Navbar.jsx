@@ -56,8 +56,8 @@ const Navbar = () => {
 	);
 	return (
 		<div
-			className={`navbar px-12 py-4 fixed z-10  ${
-				darkMode ? 'bg-accent' : 'bg-neutral bg-opacity-70' 
+			className={`navbar px-12 py-4 fixed z-10 ${
+				darkMode ? 'bg-accent' : 'bg-accent' 
 			}`}
 		>
 			<div className="navbar-start">
@@ -88,7 +88,7 @@ const Navbar = () => {
 							className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-300 rounded-sm w-52"
 						>
 							{navItem}
-							<Link className="btn btn-sm btn-primary" onClick={handleLogOut}>
+							<Link className="btn btn-sm bg-white text-neutral" onClick={handleLogOut}>
 								Logout
 							</Link>
 						</ul>
@@ -138,11 +138,11 @@ const Navbar = () => {
 				</div>
 
 				<a
-					className={`normal-case text-xl ${
-						darkMode ? 'text-gray-300' : 'text-gray-300'
+					className={`font-bold text-xl ${
+						darkMode ? 'text-pink-300' : 'text-pink-400'
 					}`}
 				>
-					LensCrafters
+					<span className=' text-sky-300'>Lens</span>Crafters
 				</a>
 			</div>
 			<div className="navbar-center hidden lg:flex">
@@ -152,7 +152,7 @@ const Navbar = () => {
 				{user ? (
 					<>
 						<Link
-							className="btn btn-primary hidden lg:flex"
+							className="btn bg-gray-300 text-neutral hidden lg:flex"
 							onClick={handleLogOut}
 						>
 							Logout
@@ -164,7 +164,7 @@ const Navbar = () => {
 						</div>
 					</>
 				) : (
-					<Link to="/login" className="btn btn-primary">
+					<Link to="/login" className="btn bg-gray-300 text-neutral">
 						Login
 					</Link>
 				)}

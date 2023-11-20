@@ -11,11 +11,11 @@ const FAQSection = () => {
   const { darkMode } = useContext(DarkModeContext);
   const [ques, setQues] = useState([]);
   useEffect(() => {
-    axios.get(`http://localhost:5000/faqs`).then((data) => setQues(data.data));
-  }, [loading]);
-//   console.log(ques);
+    axios.get(`${import.meta.env.VITE_API_URL}faqs`).then((data) => setQues(data.data));
+  }, [loading, axios]);
+  console.log(ques);
   return (
-    <div className="container w-11/12">
+    <div className="container">
       <Title className="mx-auto" heading="Frequently asked questions"></Title>
       <div className="lg:flex lg:flex-row
              gap-20 flex flex-col-reverse">
@@ -26,7 +26,7 @@ const FAQSection = () => {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-100 px-4 py-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-gray-500/75">
-                    <span>{i+1}. {q.question}</span>
+                    <span>{i+1}. {q?.question}</span>
                     <ChevronUpIcon
                       className={`${
                         open ? "rotate-180 transform" : ""
@@ -34,7 +34,7 @@ const FAQSection = () => {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-gray-700">
-                   {q.answer}
+                   {q?.answer}
                   </Disclosure.Panel>
                 </>
               )}

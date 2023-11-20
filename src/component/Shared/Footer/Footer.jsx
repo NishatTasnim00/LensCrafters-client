@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../../../public/camera.png';
+import logo from '../../../../public/camera.png'
 import { FaArrowRight, FaFacebook } from 'react-icons/fa';
 import facebook from '../../../assets/icons/facebook (1).png';
 import instagram from '../../../assets/icons/instagram.png';

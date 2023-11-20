@@ -8,7 +8,7 @@ const OurWork = () => {
   const { darkMood } = useContext(DarkModeContext);
 
   return (
-    <div className="container lg:mt-20 w-11/12">
+    <div className="container lg:mt-20">
       <div
         className="space-y-4 text-center lg:flex w-full"
         style={darkMood ? { backgroundImage: `url(${bgImage})` } : {}}

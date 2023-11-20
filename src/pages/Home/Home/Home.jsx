@@ -6,6 +6,7 @@ import Banner from '../Banner/Banner';
 import OurWork from '../../OurWork/OurWork';
 import Contact from '../Contact/Contact';
 import FAQSection from '../FAQSection/FAQSection';
+import Gallery from './Gallery/Gallery';
 
 const Home = () => {
 	const { darkMode } = useContext(DarkModeContext);
@@ -16,7 +17,9 @@ const Home = () => {
 			<PopularCls></PopularCls>
 			<PopularInstructor></PopularInstructor>
 			<OurWork></OurWork>
+			<Gallery />
 			<FAQSection />
+
 			<Contact />
 		</div>
 	);

@@ -15,27 +15,27 @@ const ClassesCard = ({ singleClass, handleBookClass }) => {
 	};
 	return (
 		<div
-			className={`card  h-[500px]  shadow-lg rounded-sm mt-10 ${
+			className={`card  h-[500px]  shadow-lg rounded-lg mt-10 ${
 				availableSeats < 1 ? 'bg-red-500' : ''
 			}`}
 		>
-			<figure className="h-[700px] w-full">
+			<figure className="h-[700px] w-full rounded-t-lg">
 				<img
 					src={image}
 					alt="toys"
-					className="rounded-sm h- w-full object-contain"
+					className="rounded-t-lg h-[700px] w-full object-contain"
 				/>
 			</figure>
-			<div className="flex flex-col text-left px-10 mb-10 space-y-1">
+			<div className="flex flex-col text-left px-10 py-5  space-y-1">
 				<h2 className="text-tag">
-					<span className="">Course :</span> {name}
+					<span className="font-light text-base">Course :</span> {name}
 				</h2>
 				<h2 className="text-tag">
-					<span>Instructor : </span>
+					<span className="font-light text-base">Instructor : </span>
 					{instructorName}
 				</h2>
 				<h2 className="text-tag">
-					<span>Available Seats : </span>
+					<span className="font-light text-base">Available Seats : </span>
 					{availableSeats}
 				</h2>
 
@@ -43,18 +43,19 @@ const ClassesCard = ({ singleClass, handleBookClass }) => {
 					<span>Cost : </span>${fees}
 				</p>
 
-				<div className="w-full justify-end">
+				
+			</div>
+			<div className="w-full justify-end">
 					<button
 						disabled={userData.role !== 'student' || availableSeats <= 0}
 						onClick={() => {
 							userData ? handleBookClass(userData._id, _id) : handleNotUser();
 						}}
-						className={`btn btn-block rounded-sm  border-none bg-gray-950 text-white`}
+						className={`btn btn-block rounded-b-lg rounded-none  border-none bg-gray-950 text-white`}
 					>
 						Enroll Now
 					</button>
 				</div>
-			</div>
 		</div>
 	);
 };

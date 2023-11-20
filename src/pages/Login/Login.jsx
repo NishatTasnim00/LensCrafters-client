@@ -14,11 +14,11 @@ const Login = () => {
 
 	const handleLogin = (data) => {
 		const { email, password } = data;
-		console.log(email, password);
+		// console.log(email, password);
 		signIn(email, password)
 			.then((result) => {
 				const user = result.user;
-				console.log(user);
+				// console.log(user);
 				navigate(from, { replace: true });
 			})
 			.catch((error) => {
@@ -28,13 +28,13 @@ const Login = () => {
 
 	return (
 		<div
-			className="hero p-20"
+			className="hero p-20  bg-black bg-opacity-20"
 			style={{
 				backgroundImage: `url(${bg1})`,
 			}}
 		>
 			<div
-				className="hero-content px-20 flex-col-reverse md:flex-row border-2 shadow-[5px_5px_2px_2px_rgba(0,0,0,0.3)]"
+				className="hero-content mt-20 px-20 flex-col-reverse md:flex-row border-2 shadow-[5px_5px_2px_2px_rgba(0,0,0,0.3)]"
 				style={{ backgroundImage: `url(${bg1})` }}
 			>
 				<div className="card flex-shrink-0 w-full max-w-sm">
