@@ -11,9 +11,9 @@ const FAQSection = () => {
   const { darkMode } = useContext(DarkModeContext);
   const [ques, setQues] = useState([]);
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_API_URL}faqs`).then((data) => setQues(data.data));
+    axios.get(`${import.meta.env.VITE_API_URL}/faqs`).then((data) => setQues(data.data));
   }, [loading, axios]);
-  console.log(ques);
+  // console.log(ques);
   return (
     <div className="container">
       <Title className="mx-auto" heading="Frequently asked questions"></Title>
@@ -22,7 +22,7 @@ const FAQSection = () => {
       <div className="w-full px-4">
         <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-2">
         {ques?.map((q, i)=>(
-              <Disclosure>
+              <Disclosure key={i+1}>
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-100 px-4 py-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-gray-500/75">

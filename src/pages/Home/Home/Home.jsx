@@ -6,7 +6,8 @@ import Banner from '../Banner/Banner';
 import OurWork from '../../OurWork/OurWork';
 import Contact from '../Contact/Contact';
 import FAQSection from '../FAQSection/FAQSection';
-import Gallery from './Gallery/Gallery';
+import Gallery from '../Gallery/Gallery';
+import PopularTutorials from '../PopularTutorials/PopularTutorials';
 
 const Home = () => {
 	const { darkMode } = useContext(DarkModeContext);
@@ -16,6 +17,7 @@ const Home = () => {
 			<Banner></Banner>
 			<PopularCls></PopularCls>
 			<PopularInstructor></PopularInstructor>
+			<PopularTutorials />
 			<OurWork></OurWork>
 			<Gallery />
 			<FAQSection />
