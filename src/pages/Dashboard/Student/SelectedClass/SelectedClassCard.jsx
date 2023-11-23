@@ -18,7 +18,7 @@ const SelectedClassCard = ({ bookClass, refetch, handleDeleteClass }) => {
 
 
 	return (
-		<div className="card card-side bg-base-100 shadow-xl rounded-sm h-64 ">
+		<div className="card card-side bg-gray-400 shadow-xl rounded-lg h-64 ">
 			<figure className="w-4/12">
 				<img className="h-full w-full object-cover" src={image} alt="Movie" />
 			</figure>

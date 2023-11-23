@@ -21,8 +21,8 @@ const PaymentTable = () => {
 
 	return (
 		<div className="container">
-			<div className="overflow-x-auto">
-				<table className="table">
+			<div className="overflow-x-auto ">
+				<table className="table w-[1000px]">
 					{/* head */}
 					<thead className='text-lg font-semibold bg-gray-400 text-gray-950 text-center'>
 						<tr>

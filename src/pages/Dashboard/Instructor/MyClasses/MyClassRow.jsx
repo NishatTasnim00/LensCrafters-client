@@ -3,7 +3,7 @@ const MyClassRow = ({ myClass, i }) => {
 	// console.log(myClass);
 	const { _id, image, name, fees, booked, status, feedback } = myClass;
 	return (
-		<tr className="text-center w-full">
+		<tr className="text-center  w-full">
 			<td>{i + 1}</td>
 			<td>
 				<div className="flex items-center space-x-3">
@@ -14,7 +14,7 @@ const MyClassRow = ({ myClass, i }) => {
 					</div>
 					<div className="text-left">
 						<div className="font-bold capitalize">{name}</div>
-						<div className="text-sm opacity-60 text-secondary ">
+						<div className="text-sm">
 							Course cost: <span className="font-bold text-lg">${fees}</span>
 						</div>
 					</div>

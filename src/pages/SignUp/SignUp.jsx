@@ -9,6 +9,7 @@ import { AuthContext } from '../../Provider/AuthProvider';
 import { saveUser } from '../../api/auth';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import toast from 'react-hot-toast';
 
 const validationSchema = yup.object().shape({
 	password: yup
@@ -66,18 +67,23 @@ const SignUp = () => {
 					})
 					.catch((error) => console.log(error.message));
 			})
-			.catch((error) => console.log(error.message));
+			.catch((error) => {
+				const text = error.code.split("/");
+				const text1 = text[1].split("-").join(" ");
+				const err = text1.charAt(0).toUpperCase() + text1.slice(1) + ".";
+				toast.error(err);
+			  });
 	};
 	return (
 		<div
-			className="hero p-20 flex justify-center align-middle"
-			style={{
-				backgroundImage: `url(${bg1})`,
-			}}
+			className="hero py-5 lg:p-20 flex justify-center align-middle bg-accent bg-opacity-20"
+			// style={{
+			// 	backgroundImage: `url(${bg1})`,
+			// }}
 		>
 			<div
-				className="hero-content px-20 mt-20 flex-col-reverse md:flex-row border-2 shadow-[5px_5px_2px_2px_rgba(0,0,0,0.3)]"
-				style={{ backgroundImage: `url(${bg1})` }}
+				className="hero-content px-20 mt-20 bg-accent bg-opacity-40 flex-col-reverse md:flex-row border-2 shadow-[5px_5px_2px_2px_rgba(0,0,0,0.3)]"
+				// style={{ backgroundImage: `url(${bg1})` }}
 			>
 				<div className="card flex-shrink-0 w-full max-w-sm">
 					<div className="card-body">
@@ -189,10 +195,10 @@ const SignUp = () => {
 									Sign Up
 								</button>
 							</div>
-							<p className="text-center text-gray-400">
-								<small>
-									Already have an account?<Link to="/login">LogIn</Link>
-								</small>
+							<p className="text-center text-gray-100 pt-1">
+								
+									Already have an account?<Link to="/login"> <span className='text-sky-300'>LogIn</span></Link>
+								
 							</p>
 							<SocialLogin></SocialLogin>
 						</form>

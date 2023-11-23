@@ -13,7 +13,7 @@ const Footer = () => {
 			<div className="bg-accent md:h-96 grid content-center">
 				<section className="w-full max-w-6xl mx-auto text-white space-y-14 md:grid grid-cols-4 gap-7 justify-center p-5">
 					<div className="text-center md:text-start pt-10">
-						<div className="flex">
+						<div className="flex lg:mt-6">
 							<motion.div
 								animate={{
 									scale: [1, 2, 2, 1, 1],
@@ -21,7 +21,7 @@ const Footer = () => {
 									borderRadius: ['20%', '20%', '50%', '50%', '20%'],
 								}}
 							>
-								<img className=" pr-4" src={logo} alt="" />
+								<img className=" pr-4 w-32" src={logo} alt="" />
 							</motion.div>
 							<div>
 								<p className="font-poppins">

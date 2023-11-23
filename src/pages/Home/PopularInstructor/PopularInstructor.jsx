@@ -23,7 +23,7 @@ const PopularInstructors = () => {
 	return (
 		<div className="container">
 			<Title heading={'Popular Instructor'}></Title>
-			<div className="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-10">
+			<div className="container-grid">
 				{instructors.slice(0, 6).map((instructor) => (
 					<PopularInstructorCard
 						key={instructor._id}

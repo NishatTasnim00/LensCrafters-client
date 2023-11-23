@@ -35,7 +35,7 @@ const OurWork = () => {
             alt=""
           />
         </div>
-        <div className="w-full lg:w-6/12 lg:pl-10 text-justify font-medium text-base-400 -mt-10 ">
+        <div className="w-full lg:w-6/12 lg:pl-10 text-justify font-medium text-base-400 -mt-10 leading-8">
           <Fade>
             <Title
               heading={"Welcome to our Photography Summer School!"}

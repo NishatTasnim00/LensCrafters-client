@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { DarkModeContext } from '../../../../Provider/DarkMoodProvider';
 // import { handleUpdateRole } from '../../../../api/auth';
 
 const ManageUsersCard = ({ user, handleUpdateRole }) => {
-	const { _id, name, email, role, photo } = user;
+	const { darkMode } = useContext(DarkModeContext);	const { _id, name, email, role, photo } = user;
 	return (
-		<div className="card bg-base-100 shadow-xl rounded-sm">
+		<div className={`card shadow-xl rounded-lg ${ darkMode? "bg-gray-400 text-gray-100" :" "}`}>
 			<figure className="h-64">
 				<img className="h-full w-full object-cover" src={photo} alt="user" />
 			</figure>
@@ -23,7 +24,7 @@ const ManageUsersCard = ({ user, handleUpdateRole }) => {
 						{role}
 					</div>
 				</h2>
-				<p className="text-base opacity-60 text-neutral -mt-2">{email}</p>
+				<p className="text-neutral -mt-2">{email}</p>
 				<div className="card-actions justify-end text-info font-semibold mt-5">
 					<button
 						onClick={() => 

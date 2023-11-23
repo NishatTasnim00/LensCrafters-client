@@ -16,7 +16,7 @@ const MyClasses = () => {
 			.then((data) => setMyClasses(data.data));
 	}, [axiosSecure]);
 	return (
-		<div className="w-10/12">
+		<div className=" lg:w-[1000px]">
 			<Title
 				heading={`Courses Conducted `}
 				subheading={`by ${userData?.name}`}

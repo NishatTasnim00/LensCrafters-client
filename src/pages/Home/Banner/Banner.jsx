@@ -13,10 +13,10 @@ const Banner = () => {
         alt="Image 1"
       />
 	   <div className="absolute top-0  text-gray-300 opacity-70 w-2/5 space-y-3 p-20 pt-32">
-            <h1 className="banner-title space-y-3"><span className="text-[90px] text-yellow-700">LensCrafter</span> <br></br>Mastering the Art <br />of Photography</h1>
+            <h1 className="banner-title space-y-3 logo"><span className="text-[100px] text-yellow-700 font-garamond">LensCrafters</span> <br></br>Mastering the Art <br />of Photography</h1>
 
-            <p className="banner-subtitle">
-            Capture Moments, Unleash Creativity: Enroll in ShutterCraft Academy for a Journey into the World of Photography Excellence!
+            <p className="banner-subtitle logo">
+            Capture Moments, Unleash Creativity:<br/> Enroll in ShutterCraft Academy for a <br /> Journey into the World of Photography <br /> Excellence!
             </p>
 			</div>
       {/* <Carousel className="text-center h-[700px]" showThumbs={false}>

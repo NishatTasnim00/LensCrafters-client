@@ -13,7 +13,7 @@ const PaymentTableRow = ({ paidClass, index }) => {
 			<tr className='text-base text-center'>
 				<th> {index + 1}</th>
 				<td>{className}</td>
-				<td>${cost}</td>
+				<td className=''>${cost}</td>
 				<td>
 					{transactionId}
                     <br />

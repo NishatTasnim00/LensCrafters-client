@@ -51,7 +51,7 @@ const ManageClassesCard = ({
 	return (
 		<div className="card rounded-sm card-side shadow-xl w-full h-80">
 			<figure className="w-4/12">
-				<img className="h-full" src={image} alt="photo" />
+				<img className="h-full w-full object-cover " src={image} alt="photo" />
 			</figure>
 			<div className="p-10 bg-accent bg-opacity-80 text-base-100 w-8/12">
 				<h2 className="card-title capitalize">{name}</h2>

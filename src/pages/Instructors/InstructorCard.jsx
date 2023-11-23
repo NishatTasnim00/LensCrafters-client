@@ -2,9 +2,9 @@ import React from 'react';
 
 const InstructorCard = ({ instructor }) => {
 	const { photo, name, email } = instructor;
-	console.log(instructor);
+	// console.log(instructor);
 	return (
-		<div className="card border pt-8 rounded-sm mt-10 bg-gray-100 hover:bg-gray-200 shadow-inner shadow-4xl">
+		<div className="card border pt-8 rounded-lg mt-10 bg-gray-400 hover:shadow-lg shadow-inner shadow-4xl">
 			<figure className="mx-auto h-24 w-24 rounded-full border-2 border-black shadow-2xl">
 				<img className="h-24 w-24 rounded-full" src={photo} alt="user" />
 			</figure>

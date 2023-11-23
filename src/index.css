@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo{
+	font-family: 'Playfair Display SC', serif;
+	font-style: italic;
+}
+.font-primary{
+	font-family: 'Playfair Display SC', serif;
+	font-style: normal;
+}
 
 .container-grid {
 	@apply grid gap-8  mb-8 md:grid-cols-2 lg:grid-cols-3 mx-auto;
 }
 .container {
+	font-family: 'Playfair Display SC', serif;
 	@apply p-10 mx-auto;
 }
 .text-li {
@@ -18,27 +29,30 @@
 	@apply font-semibold text-lg  text-base-200 hover:text-gray-400 active:text-orange-200;
 }
 .add-class {
-	@apply input-bordered w-full rounded-sm shadow-md text-gray-500 font-medium;
+	@apply input-bordered w-full rounded-lg shadow-md text-gray-500 font-medium;
 }
 .text-add-class {
-	@apply text-lg font-semibold text-secondary;
+	@apply text-lg font-semibold ;
 }
 .text-tag {
 	@apply text-xl font-semibold text-neutral dark:text-gray-200;
 }
 .text-tag-dark {
-	@apply text-xl font-semibold;
+	@apply text-xl font-bold;
 }
 .btn-primary {
 	@apply rounded-lg bg-accent border-none text-base-100 hover:bg-gray-900;
 }
 .banner-title {
-	@apply font-bold lg:text-5xl text-4xl text-left pb-2;
+	@apply font-bold lg:text-6xl text-4xl text-left pb-2;
 }
 .banner-subtitle {
-	@apply font-normal text-xl ;
+	@apply font-normal text-xl;
 }
 
 .text-price{
 	@apply font-bold text-teal-700
+}
+.label-text{
+	@apply text-base font-medium
 }

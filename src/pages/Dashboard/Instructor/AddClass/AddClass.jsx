@@ -80,9 +80,9 @@ const AddClass = () => {
 
 
 	return (
-		<div className="w-full">
+		<div className="lg:w-[1000px]">
 			<Title heading={'Launch a new course'}></Title>
-			<form onSubmit={handleSubmit(onSubmit)} className="w-3/5 mx-auto">
+			<form onSubmit={handleSubmit(onSubmit)} className="w-4/5 mx-auto">
 				{errors.exampleRequired && <span>This field is required</span>}
 				<div className="grid lg:grid-cols-2">
 					<div className="w-full px-5">

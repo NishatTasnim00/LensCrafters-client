@@ -7,12 +7,15 @@ import { FaHome, FaChalkboardTeacher } from 'react-icons/fa';
 import { MdClass } from 'react-icons/md';
 import { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { DarkModeContext } from '../../Provider/DarkMoodProvider';
 
 const Dashboard = () => {
 	const { userData } = useGetUser();
 	const {user} = useContext(AuthContext)
+	const {darkMode} = useContext(DarkModeContext)
 	return (
-		<div className="drawer lg:drawer-open">
+		<div className={`font-primary ${darkMode ? 'text-white bg-gray-600' : ''}`}>
+		<div className="drawer lg:drawer-open logo">
 			<input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 			<div className="drawer-content flex flex-col items-center justify-center">
 				{/* Page content here */}
@@ -22,7 +25,9 @@ const Dashboard = () => {
 				>
 					Open drawer
 				</label>
+				<div className={`font-primary ${darkMode ? 'text-white bg-gray-600' : ''}`}>
 				<Outlet></Outlet>
+				</div>
 			</div>
 			<div className="drawer-side">
 				<label htmlFor="my-drawer-2" className="drawer-overlay"></label>
@@ -39,7 +44,7 @@ const Dashboard = () => {
 							<img className="w-10 -mt-2" src={camera} alt="" />
 						</motion.div>
 
-						<a className="normal-case text-2xl">LensCrafters</a>
+						<a className="normal-case text-2xl logo text-yellow-600">LensCrafters</a>
 					</div>
 					<img
 						className="h-24 w-24 rounded-full border-2 border-gray-500 mx-auto"
@@ -69,6 +74,7 @@ const Dashboard = () => {
 					</li>
 				</ul>
 			</div>
+		</div>
 		</div>
 	);
 };

@@ -7,7 +7,7 @@ import bg from "../../../../public/contact-bg.jpg";
 import ContactForm from "../../../component/ContactForm/ContactForm";
 const Contact = () => {
   return (
-    <div className="container w-11/12 rounded-lg">
+    <div className="container w-11/12 rounded-lg text-gray-100">
       <div
         className="hero min-h-screen"
         style={{ backgroundImage: `url(${bg})` }}

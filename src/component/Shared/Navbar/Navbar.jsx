@@ -64,7 +64,7 @@ const Navbar = () => {
 				<div className="dropdown rounded-none ">
 					<label
 						tabIndex={0}
-						className="btn btn-ghost lg:hidden"
+						className="btn  lg:hidden"
 						onClick={handleToggle}
 					>
 						<svg
@@ -85,7 +85,7 @@ const Navbar = () => {
 					{isOpen && (
 						<ul
 							tabIndex={0}
-							className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-300 rounded-sm w-52"
+							className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-accent rounded-lg w-52"
 						>
 							{navItem}
 							<Link className="btn btn-sm bg-white text-neutral" onClick={handleLogOut}>
@@ -138,11 +138,11 @@ const Navbar = () => {
 				</div>
 
 				<a
-					className={`font-bold text-xl ${
-						darkMode ? 'text-pink-300' : 'text-pink-400'
+					className={`font-garamond logo text-xl font-medium ${
+						darkMode ? 'text-yellow-600' : 'text-yellow-600'
 					}`}
 				>
-					<span className=' text-sky-300'>Lens</span>Crafters
+					<span className=' text-yellow-600'>Lens</span>Crafters
 				</a>
 			</div>
 			<div className="navbar-center hidden lg:flex">

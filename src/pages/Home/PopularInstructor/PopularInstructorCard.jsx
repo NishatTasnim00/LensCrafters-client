@@ -37,7 +37,7 @@ const PopularInstructorCard = ({ instructor, hello }) => {
 					alt="user"
 				/>
 			</figure>
-			<div className="h-[400px] w-full rounded-lg card-body  absolute top-0 bg-black opacity-0 hover:opacity-70">
+			<div className="h-[400px] w-full rounded-lg card-body  absolute top-0 bg-black opacity-0 hover:opacity-80">
 
 			<div className='h-[400px] w-full rounded-lg flex justify-center items-center'>
 				<div>

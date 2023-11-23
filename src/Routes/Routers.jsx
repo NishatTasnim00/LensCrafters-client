@@ -16,7 +16,6 @@ import PrivateRoute from './PrivateRoute';
 import InstructorRoute from './InstructorRoute';
 import AdminRoute from './AdminRoute';
 import StudentRoute from './StudentRoute';
-// import Payment from '../pages/Dashboard/Payment/Payment';
 import Welcome from '../pages/Dashboard/Welcome/Welcome';
 import EnrolledClasses from '../pages/Dashboard/Student/EnrolledClasses/EnrolledClasses';
 import PaymentTable from '../pages/Dashboard/Student/PaymentTable/PaymentTable';
@@ -24,7 +23,7 @@ export const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Main></Main>,
-		errorElement: <ErrorPage></ErrorPage>,
+		// errorElement: <ErrorPage></ErrorPage>,
 
 		children: [
 			{
