@@ -18,8 +18,8 @@ const SelectedClassCard = ({ bookClass, refetch, handleDeleteClass }) => {
 
 
 	return (
-		<div className="card card-side bg-gray-400 shadow-xl rounded-lg h-64 ">
-			<figure className="w-4/12">
+		<div className="card lg:card-side bg-gray-400 shadow-xl rounded-lg lg:h-64">
+			<figure className="w-full lg:w-1/3">
 				<img className="h-full w-full object-cover" src={image} alt="Movie" />
 			</figure>
 			<div className="card-body relative">
@@ -28,7 +28,7 @@ const SelectedClassCard = ({ bookClass, refetch, handleDeleteClass }) => {
 						handleDeleteClass(userData._id, _id);
 						refetch();
 					}}
-					className="absolute right-10 tooltip hover:text-red-700"
+					className="absolute bottom-10 lg:bottom-52 lg:right-8 tooltip hover:text-red-700"
 					data-tip="Delete Class from your listing"
 				>
 					<AiFillDelete size={30} />

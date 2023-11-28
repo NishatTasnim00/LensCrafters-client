@@ -40,12 +40,12 @@ const SelectedClass = () => {
 	};
 
 	return (
-		<div className="container">
+		<div className="bg-red-500">
 			<Title
 				heading={'Courses to Enroll Later'}
 				subheading={`You have selected ${bookedClasses.length} courses`}
 			></Title>
-			<div className="space-y-5 w-10/12 mx-auto">
+			<div className="space-y-5 mx-auto py-10">
 				{bookedClasses.map((bookClass) => (
 					<SelectedClassCard
 						key={bookClass._id}
