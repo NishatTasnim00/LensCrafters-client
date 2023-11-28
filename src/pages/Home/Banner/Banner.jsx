@@ -1,24 +1,34 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import BannerText from "../../../component/BannerText/BannerText";
 
 const Banner = () => {
   return (
     <div className="bg-black relative">
       <img
-        className="w-full lg:h-[700px] object-cover opacity-50"
+        className="w-full h-96 lg:h-[700px] object-cover opacity-50"
         src="https://wallpapers.net/web/wallpapers/photographer-taking-a-picture-hd-wallpaper/828x350.jpg"
         // src="https://petapixel.com/assets/uploads/2022/03/By-the-Numbers-The-Underrepresentation-of-Women-in-Photography-800x420.jpg"
         // src="https://web-images.pixpa.com/k5Ue8lst2q1NVFPWIoskFTD4wGbQoSibmun1taSeSpQ/rs:fit:1200:0/q:80/czM6Ly9waXhwYS5jb20vL2NvbS9hcnRpY2xlcy8xNTE1MTM1NjcyLXNodXR0ZXJzdG9ja18yODQ1ODE2NDkuanBn"
         alt="Image 1"
       />
-	   <div className="absolute top-0  text-gray-300 opacity-70 w-2/5 space-y-3 p-20 pt-32">
-            <h1 className="banner-title space-y-3 logo"><span className="text-[100px] text-yellow-700 font-garamond">LensCrafters</span> <br></br>Mastering the Art <br />of Photography</h1>
-
-            <p className="banner-subtitle logo">
-            Capture Moments, Unleash Creativity:<br/> Enroll in ShutterCraft Academy for a <br /> Journey into the World of Photography <br /> Excellence!
-            </p>
-			</div>
+<div className="absolute top-0  text-gray-300 opacity-70 lg:w-2/5 space-y-3 lg:p-20 pt-32 lg:pt-40 text-center lg:text-left lg:block hidden">
+<BannerText />
+</div>
+      
+      <div className="absolute top-0  text-gray-300 opacity-70 space-y-3  pt-32  text-center  lg:hidden">
+        <h1 className="banner-title logo">
+          <span className="text-5xl text-yellow-700">
+            LensCrafters
+          </span>{" "}
+        </h1>
+     
+        <p className="text-center logo">
+          Mastering the Art of Photography Capture Moments, Unleash Creativity
+        </p>
+    
+      </div>
       {/* <Carousel className="text-center h-[700px]" showThumbs={false}>
         <div className="relative flex justify-center">
           <img

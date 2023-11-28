@@ -10,8 +10,8 @@ import { motion } from 'framer-motion';
 const Footer = () => {
 	return (
 		<footer>
-			<div className="bg-accent md:h-96 grid content-center">
-				<section className="w-full max-w-6xl mx-auto text-white space-y-14 md:grid grid-cols-4 gap-7 justify-center p-5">
+			<div className="bg-accent md:h-96 grid  content-center">
+				<section className="container w-full mx-auto text-white space-y-14 md:grid grid-cols-4 gap-7 justify-center p-5">
 					<div className="text-center md:text-start pt-10">
 						<div className="flex lg:mt-6">
 							<motion.div
@@ -28,6 +28,11 @@ const Footer = () => {
 									Photography workshops, hands-on experience, creativity
 									unleashed.
 								</p>
+								<div className="flex gap-8 h-8 mt-3 ml-12">
+							<img src={facebook} alt="" />
+							<img src={instagram} alt="" />
+							<img src={youtube} alt="" />
+						</div>
 							</div>
 						</div>
 					</div>
@@ -80,16 +85,12 @@ const Footer = () => {
 								<FaArrowRight color="gray" />
 							</span>
 						</div>
-						<div className="flex gap-8 h-8 mt-3 ml-12">
-							<img src={facebook} alt="" />
-							<img src={instagram} alt="" />
-							<img src={youtube} alt="" />
-						</div>
+					
 					</div>
 				</section>
 				<hr className="py-2 text-slate-500 w-10/12 mx-auto" />
 				<p className="text-center text-gray-500 font-extralight">
-					&copy; {new Date().getFullYear()} Lens Crafter. All rights reserved.
+					&copy; {new Date().getFullYear()} Lens Crafters. All rights reserved.
 				</p>
 			</div>
 		</footer>

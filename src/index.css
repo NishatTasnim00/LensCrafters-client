@@ -44,10 +44,10 @@
 	@apply rounded-lg bg-accent border-none text-base-100 hover:bg-gray-900;
 }
 .banner-title {
-	@apply font-bold lg:text-6xl text-4xl text-left pb-2;
+	@apply font-bold lg:text-6xl pb-2 text-center lg:text-left;
 }
 .banner-subtitle {
-	@apply font-normal text-xl;
+	@apply font-normal text-xl ;
 }
 
 .text-price{

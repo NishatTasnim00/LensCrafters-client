@@ -19,7 +19,8 @@ const Instructors = () => {
 			},
 		});
     return (
-			<div className="container lg:py-20">
+			<div className="container">
+				<div className='pt-10 lg:pt-5'>
 				<Title heading={"Instructors"} subheading={'Learn Photography with legend'}></Title>
 				<div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
 					{instructors?.map((instructor) => (
@@ -28,6 +29,7 @@ const Instructors = () => {
 							instructor={instructor}
 						></InstructorCard>
 					))}
+				</div>
 				</div>
 			</div>
 		);

@@ -32,17 +32,17 @@ const Login = () => {
 
 	return (
 		<div
-			className="hero py-5 lg:p-20  bg-accent bg-opacity-20"
-			// style={{
-			// 	backgroundImage: `url(https://petapixel.com/assets/uploads/2022/03/By-the-Numbers-The-Underrepresentation-of-Women-in-Photography-800x420.jpg`,
-			// }}
+		className="hero py-5 lg:p-20 flex justify-center align-middle bg-accent bg-opacity-20"
+		// style={{
+		// 	backgroundImage: `url(${bg1})`,
+		// }}
+	>
+		<div
+			className="hero-content lg:px-20 mt-20 bg-accent bg-opacity-40 flex-col-reverse md:flex-row border-2 shadow-[5px_5px_2px_2px_rgba(0,0,0,0.3)]"
+			// style={{ backgroundImage: `url(${bg1})` }}
 		>
-			<div
-				className="hero-content bg-accent bg-opacity-40 mt-20 px-20 flex-col-reverse md:flex-row border-2 shadow-[5px_5px_2px_2px_rgba(0,0,0,0.3)]"
-				// style={{ backgroundImage: `url(${bg1})` }}
-			>
-				<div className="card flex-shrink-0 w-full max-w-sm">
-					<div className="card-body">
+			<div className="card flex-shrink-0 w-full max-w-sm">
+				<div className="card-body">
 						<h1 className="text-5xl font-bold text-center">Login</h1>
 
 						<form onSubmit={handleSubmit(handleLogin)}>

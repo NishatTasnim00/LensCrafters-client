@@ -82,7 +82,7 @@ const SignUp = () => {
 			// }}
 		>
 			<div
-				className="hero-content px-20 mt-20 bg-accent bg-opacity-40 flex-col-reverse md:flex-row border-2 shadow-[5px_5px_2px_2px_rgba(0,0,0,0.3)]"
+				className="hero-content lg:px-20 mt-20 bg-accent bg-opacity-40 flex-col-reverse md:flex-row border-2 shadow-[5px_5px_2px_2px_rgba(0,0,0,0.3)]"
 				// style={{ backgroundImage: `url(${bg1})` }}
 			>
 				<div className="card flex-shrink-0 w-full max-w-sm">

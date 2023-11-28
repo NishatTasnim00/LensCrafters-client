@@ -13,7 +13,7 @@ const PopularTutorials = () => {
     useEffect(() => {
       axios.get(`${import.meta.env.VITE_API_URL}/tutorials`).then((data) => setTutorials(data.data));
     }, [loading, axios]);
-    console.log(tutorials);
+    // console.log(tutorials);
   return (
     <div className='container'>
         <Title heading={"Popular Tutorials"}></Title>

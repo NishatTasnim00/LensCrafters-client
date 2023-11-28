@@ -12,11 +12,13 @@ const PopularTutorialsCard = ({ tutorial }) => {
     tutorial;
 
 
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
+   useEffect(() => {
+   Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div data-aos="fade-down">
+    <div 
+    data-aos="fade-down"
+    >
       <div className="card w-full bg-accent shadow-xl  duration-150 rounded-lg hover:-translate-y-1 ">
         <figure className="relative">
           <img className="w-full h-64" src={thumbnail} alt="tutorial" />
@@ -31,7 +33,7 @@ const PopularTutorialsCard = ({ tutorial }) => {
                 <FaPlayCircle
                   size={40}
                   className="bg-white rounded-full"
-                  bg-red-500
+                
                 />
                 <TutorialModal isOpen={isOpen} setIsOpen={setIsOpen} videoUrl={videoUrl}/>
               </motion.button>
